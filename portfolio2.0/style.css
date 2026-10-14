@@ -193,7 +193,7 @@ span {
 
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
 }
 
@@ -240,7 +240,7 @@ span {
 
 .portfolio-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); /* //0 to 300px */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 2rem;
 }
 
@@ -435,21 +435,15 @@ span {
   .about-img img {
     width: 70vw;
   }
-  .skills-container {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-  .portfolio-container {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+
+
 }
 
 @media (max-width: 480px) {
   .home-content h1 {
     font-size: 2.8rem;
   }
-  .portfolio-container {
-    grid-template-columns: 1fr;
-  }
+  
   .contact form .input-box input {
     width: 100%;
   }
